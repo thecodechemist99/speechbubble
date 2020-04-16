@@ -73,7 +73,10 @@ class Speechbubble {
 
   textBoxHeight() {
     let length = this.content.length;
-    return (length / (this.width / fontSize)) * fontLeading + 10;
+    let avgCharWidth = (textWidth(this.content) / length) * 1.2;
+    let charPerLine = (this.width - 75) / avgCharWidth;
+
+    return ceil(length / charPerLine) * fontLeading + 140;
   }
 }
 
