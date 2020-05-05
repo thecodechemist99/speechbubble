@@ -13,9 +13,7 @@ import Textbubble from "./textbubble.js";
 let world = new Sprite(0, 0);
 world.resize(width, height);
 
-// world.font = sketch.font;
-// world.fontSize = sketch.fontSize;
-// world.fontLeading = sketch.fontLeading;
+console.log(window.fontSize);
 
 let bubble = new Speechbubble(200, 200, 400, 300, "left");
 world.addChild(bubble);
