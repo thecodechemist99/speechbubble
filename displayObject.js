@@ -1,7 +1,7 @@
 /*
 Sprites class.
-Distributed under the MIT License.
-(c)2020 Florian Beck, based upon Work by Garrit Schaap.
+Distributed under the MIT license.
+(c)2020 Florian Beck, based upon work by Garrit Schaap.
 */
 
 export default class DisplayObject {
