@@ -17,7 +17,7 @@ export default class Textbubble extends Speechbubble {
   ) {
     super(x, y, width, colour);
     this.content = content;
-    this.height = this.calcTextBoxHeight();
+    this.height = 175;
     this.direction = direction;
     if (this.direction === "left") {
       this.x += this.width;
@@ -25,12 +25,10 @@ export default class Textbubble extends Speechbubble {
   }
 
   draw() {
+    this.height = this.calcTextBoxHeight();
+
     // draw text
     noStroke();
-    // textFont(window.font);
-    textFont("Arial");
-    textSize(window.fontSize);
-    textLeading(window.fontLeading);
     fill(this.colour);
     textAlign(LEFT, TOP);
     if (this.direction === "left") {
@@ -72,8 +70,6 @@ export default class Textbubble extends Speechbubble {
     let avgCharWidth = (textWidth(this.content) / length) * 1.2;
     let charPerLine = (this.width - 75) / avgCharWidth;
 
-    console.log(ceil(length / charPerLine) * window.fontLeading + 140);
-
-    return ceil(length / charPerLine) * window.fontLeading + 140;
+    return ceil(length / charPerLine) * window.fontLeading + 175;
   }
 }

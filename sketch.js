@@ -16,14 +16,18 @@ world.resize(width, height);
 let bubble = new Speechbubble(200, 200, 400, 300, "left");
 world.addChild(bubble);
 
-let txtBubble = new Textbubble(800, 200, 400, "Hi, I'm Florian!", "left");
+let txtBubble = new Textbubble(
+  800,
+  200,
+  400,
+  "Hi, I'm Florian! I'm a really cool person! I like to be creative!",
+  "left"
+);
 world.addChild(txtBubble);
 
 // draw
 
 function draw() {
-  console.log(window.fontSize);
-
   world.display();
 }
 window.draw = draw;
