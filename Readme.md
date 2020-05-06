@@ -1,6 +1,6 @@
 # Speechbubble Generator
 
-v2.0
+Current version: 2.0
 
 The speechbubble generator makes it easy to create speechbubbles with custom sizes as well as speechbubbles which adjust their height to the contained text.
 
@@ -8,7 +8,7 @@ It is based upon the p5.js library.
 
 ## Setup
 
-Copy the provided files into the file system of your project. You'll have to link them in your html file like in the provided example file:
+Copy the provided files into the file system of your project. You'll have to link to them in your html file like in the provided example file:
 
 ```html
 <script
