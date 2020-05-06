@@ -13,8 +13,6 @@ import Textbubble from "./textbubble.js";
 let world = new Sprite(0, 0);
 world.resize(width, height);
 
-console.log(window.fontSize);
-
 let bubble = new Speechbubble(200, 200, 400, 300, "left");
 world.addChild(bubble);
 
@@ -24,6 +22,8 @@ world.addChild(txtBubble);
 // draw
 
 function draw() {
+  console.log(window.fontSize);
+
   world.display();
 }
 window.draw = draw;

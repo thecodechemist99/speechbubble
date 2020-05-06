@@ -11,13 +11,13 @@ function setup() {
 
   // set text properties according to css
 
-  let font = myCanvas.style("font-family");
-  let fontSize = Number(myCanvas.style("font-size").replace("px", ""));
-  let fontLeading = Number(myCanvas.style("line-height").replace("px", ""));
+  window.font = myCanvas.style("font-family");
+  window.fontSize = Number(myCanvas.style("font-size").replace("px", ""));
+  window.fontLeading = Number(myCanvas.style("line-height").replace("px", ""));
 
-  textFont(font);
-  textSize(fontSize);
-  textLeading(fontLeading);
+  textFont(window.font);
+  textSize(window.fontSize);
+  textLeading(window.fontLeading);
 }
 window.setup = setup;
 
